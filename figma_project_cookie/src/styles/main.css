@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --text-black : #101A24;
+    --text-white : #ffffff;
+    --bg-button : #EA6D27;
+    --bg-menu-button : #101A24;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 35rem;
+    list-style-type: none;
+}
+
+.container_1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    height: 40rem;
+}
+
+button{
+    width: 120px;
+    height: 54px;
+}
+
+.nav_content{
+    display: block;
+    position: absolute;
+    color: var(--text-black);
+    text-decoration: none;
+}
+
+.nav_content:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav_content:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.right_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-button);
+    width: 10.438rem;
+    height: 4rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.book_table{
+    position: absolute;
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+.book_table:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.book_table:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.photo_restaurant{
+    width: 25rem;
+    height: 40rem;
+    padding: 1rem;
+}
+
+.left_section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.desc_restaurant{
+    font-size: 50%;
+}
+
+.title_left_section{
+    font-size: 437.5%;
+}
+
+.book_button{
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    background-color: var(--bg-button);
+    color: var(--text-white);
+    border: none;
+    cursor: pointer;
+}
+
+.book_button:hover{
+    transition: all 0.5s ease-in-out;
+    filter: brightness(115%);
+}
+
+.menu_button{
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    color: var(--text-white);
+    background-color: var(--bg-menu-button);
+    cursor: pointer;
+}
+
+.menu_button:hover{
+    transition: all 0.5s ease-in-out;
+    filter: brightness(115%);
+}
+
+.logo_social_nav{
+    padding: 0.15rem;
+    border: 1px solid #000;
+    border-radius: 50px;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.logo_social_nav:hover:nth-child(3){
+    transition: all 0.3s ease-in-out;
+    filter: brightness(95%);
+    filter: blur(2%);
+    background-color: #00acee;
+}
+.logo_social_nav:hover:nth-child(1){
+    transition: all 0.3s ease-in-out;
+    filter: brightness(100%);
+    filter: blur(2%);
+    background-color: #3b5998;
+}
+.logo_social_nav:hover:nth-child(2){
+    transition: all 0.3s ease-in-out;
+    filter: brightness(110%);
+    filter: blur(2%);
+    background-color: #feda75;
+}
+
+
+.container_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    height: 40rem;
+}
+
+.title_header_content{
+    font-size: 60px;
+    padding: 1rem;
+}
+
+.menu_cards{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
